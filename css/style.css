@@ -32,6 +32,7 @@ ol,
 li {
   list-style: none;
   text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -470,11 +471,12 @@ section + .features {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: start;
-  background-color: #c9e7f2;
+  text-align: left;
   height: 700px;
   padding: 120px 120px;
+
   gap: 20px;
+  background-color: #c9e7f2;
 }
 
 section + .features > .text {
@@ -483,17 +485,15 @@ section + .features > .text {
   justify-content: center;
   align-items: start;
   text-align: left;
-  min-width: 1280px;
-}
-
-section + .features > .text > h1 {
-  width: 100%;
+  max-width: 1280px;
+  gap: 20px;
 }
 
 section + .features > div {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 1280px;
   gap: 25px;
   align-items: center;
 }
@@ -557,7 +557,7 @@ section + .testimonials {
   text-align: start;
   height: 800px;
   padding: 120px 120px;
-  gap: 100px;
+  gap: 60px;
 }
 
 section + .testimonials > .container {
@@ -619,4 +619,149 @@ section + .testimonials > .container .card > .container blockquote {
 
 section + .testimonials > .container .card > .container blockquote > cite {
   font-size: medium;
+}
+
+section + .stats {
+  position: relative;
+  display: flex;
+  height: 250px;
+  background-color: #3734a9;
+  justify-content: space-between;
+  padding: 0 300px;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+section + .stats > hr {
+  height: 100%;
+  border-color: #3d3d3d;
+}
+
+section + .stats > p {
+  font-size: 1.25rem;
+  width: 150px;
+  color: #fff;
+}
+
+section + .stats .stat > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+section + .stats .stat > h1 {
+  color: #fff;
+}
+
+section + .stats .stat > div > p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+section + .stats .stat > div > img {
+  width: 20px;
+}
+
+section + .stats .stat:first-of-type div img {
+  width: 15px;
+}
+
+section + .stats > img:last-of-type {
+  position: absolute;
+  right: -60px;
+}
+
+/* Recent Blogs Section  */
+
+section + .recent-blogs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 50px;
+  padding: 120px 120px;
+
+  overflow-x: hidden;
+}
+
+section + .recent-blogs > h1 {
+  width: 100%;
+  text-align: left;
+  max-width: 1280px;
+}
+
+section + .recent-blogs > .blog {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  align-items: center;
+  max-width: 1280px;
+}
+
+section + .recent-blogs > .blog > .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+}
+
+section + .recent-blogs > .blog > .text > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 500px;
+}
+
+section + .recent-blogs > .blog > .text > div > h3 {
+  font-size: 1.5rem;
+}
+
+section + .recent-blogs > .blog > .text > a {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+section + .recent-blogs > .container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section + .recent-blogs > .container > .blog {
+  background-color: #fff;
+  width: 400px;
+  height: 455px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+section + .recent-blogs > .container > .blog > .text {
+  padding: 50px 50px 0 50px;
+}
+
+section + .recent-blogs > .container > .blog > .text > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+section + .recent-blogs > .container > .blog > .text > div > h3 {
+  font-size: 1.75rem;
+}
+
+section + .recent-blogs > .container > .blog > img {
+  width: 100%;
 }
