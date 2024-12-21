@@ -56,7 +56,7 @@ h3 {
 }
 
 h4 {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -1px;
   font-size: 1.5rem;
 }
@@ -348,7 +348,7 @@ nav > div > .start-free-cta-btn {
   margin-bottom: 0px;
 }
 
-.value-props > .card {
+.card {
   text-align: center;
   height: 360px;
   width: 360px;
@@ -361,33 +361,34 @@ nav > div > .start-free-cta-btn {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 24px;
   padding: 0 50px;
+  background-color: #fff;
 }
 
-.value-props > .card > .number {
+.card > .number {
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
-.value-props > .card > .wallet {
+.card > .wallet {
   margin: 17px 0;
 }
 
-.value-props > .card > p {
+.card > p {
   font-size: small;
   color: #555;
 }
 
-.value-props > .card > .wallet > div {
-  width: 30px;
-  height: 10px;
+.card > .wallet > div {
+  width: 28px;
+  height: 9px;
   background-color: black;
-  margin: 2px 0;
+  margin: 5px 0;
 }
 
-.value-props > .card > .wallet > .wallet-color {
-  height: 30px;
-  width: 50px;
+.card > .wallet > .wallet-color {
+  height: 27px;
+  width: 45px;
 }
 
 .value-props > .card > .wallet-1 > .wallet-color {
@@ -446,7 +447,7 @@ nav > div > .start-free-cta-btn {
 
 .section-why-choose-us + .two {
   margin-top: -150px;
-  margin-bottom: -200px;
+  margin-bottom: -50px;
 }
 
 .section-why-choose-us + .two > .why-choose-us-div > .testimonial {
@@ -457,4 +458,88 @@ nav > div > .start-free-cta-btn {
   margin-left: -100px;
   width: 700px;
   transform: translateY(50px);
+}
+
+/* Features That Blows Mind  */
+
+section + .features {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  background-color: #c9e7f2;
+  height: 700px;
+  padding: 120px 120px;
+  gap: 20px;
+}
+
+section + .features > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+  max-width: 1280px;
+}
+
+section + .features > .text > h1 {
+  width: 100%;
+}
+
+section + .features > div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+
+section + .features > div > .card {
+  height: 325px;
+  width: 410px;
+}
+
+section + .features > div > .vertical .card {
+  margin: 25px 0;
+  width: 400px;
+  height: 150px;
+}
+
+section + .features > p {
+  width: 450px;
+}
+
+section + .features .card {
+  font-size: small;
+  color: #000;
+  font-weight: 600;
+  border-radius: 10px;
+  align-items: flex-start;
+  text-align: start;
+  height: auto;
+  padding: 35px 30px;
+}
+
+section + .features .card > .wallet {
+  margin: 0 0;
+}
+
+section + .features > .text > p {
+  width: 500px;
+  text-align: left;
+}
+
+section + .features .card.one > .wallet > .wallet-color {
+  background-color: #ff7f5c;
+}
+section + .features .card.two > .wallet > .wallet-color {
+  background-color: #4f46ba;
+}
+
+section + .features > .design-element {
+  position: absolute;
+  left: -10px;
+  bottom: 75px;
 }
