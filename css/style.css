@@ -34,8 +34,54 @@ li {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 50px;
+  line-height: 3.5rem;
+  letter-spacing: -1.5px;
+  font-weight: 900;
+}
+
+h2 {
+  line-height: 3.5rem;
+  letter-spacing: -2px;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h3 {
+  line-height: 2rem;
+  font-size: 1.85rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 1.5rem;
+}
+
+li,
+p {
+  font-size: small;
+}
+
+li {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+
+.hook {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #4f46ba;
+}
+
 body {
   font-family: "Manrope";
+  background-color: #fafbff;
 }
 
 header {
@@ -43,7 +89,7 @@ header {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  height: 1000px;
+  max-height: 1000px;
   background: rgb(98, 186, 218);
   background: -moz-linear-gradient(
     315deg,
@@ -73,17 +119,18 @@ nav {
   height: 52px;
   margin: auto;
   margin-top: 38px;
+  z-index: 10;
 }
 
-nav > h1 {
-  font-family: "Gilroy";
-  font-size: larger;
+nav > .logo {
+  font-size: large;
+  letter-spacing: normal;
 }
 
 nav > ul {
   display: flex;
   justify-content: space-between;
-  width: 322px;
+  width: 300px;
   font-size: small;
   color: black;
 }
@@ -134,8 +181,6 @@ nav > div > .start-free-cta-btn {
 }
 
 .text-content h1 {
-  font-size: 52px;
-  letter-spacing: -1.5px;
   margin-bottom: 20px;
 }
 
@@ -244,4 +289,172 @@ nav > div > .start-free-cta-btn {
 .client-logos .logos img {
   max-width: 100px;
   margin: 20px;
+}
+
+/* Section Heading  */
+
+.section-heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin: 71px 0;
+}
+
+.section-heading-group-1 {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.section-heading-group-1 > p {
+  font-size: small;
+}
+
+.testimonial {
+  border-radius: 24px;
+  background-color: #eaebee;
+  max-width: 450px;
+  position: relative;
+  padding: 34px 38px;
+  font-size: small;
+  font-weight: 600;
+}
+
+.testimonial > .quote-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  left: 35px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/* Value Props */
+
+.value-props {
+  align-items: center;
+  display: flex;
+  gap: 31px;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.value-props > .card {
+  text-align: center;
+  height: 360px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+  padding: 0 50px;
+}
+
+.value-props > .card > .number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.value-props > .card > .wallet {
+  margin: 17px 0;
+}
+
+.value-props > .card > p {
+  font-size: small;
+  color: #555;
+}
+
+.value-props > .card > .wallet > div {
+  width: 30px;
+  height: 10px;
+  background-color: black;
+  margin: 2px 0;
+}
+
+.value-props > .card > .wallet > .wallet-color {
+  height: 30px;
+  width: 50px;
+}
+
+.value-props > .card > .wallet-1 > .wallet-color {
+  background-color: #4f46ba;
+}
+.value-props > .card > .wallet-2 > .wallet-color {
+  background-color: #ff7f5c;
+}
+.value-props > .card > .wallet-3 > .wallet-color {
+  background-color: #fdbc64;
+}
+
+/* Section - Why Choose Us  */
+
+.section-why-choose-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.section-why-choose-us > .finance-tracking {
+  width: 650px;
+  transform: translate(0, 75px);
+}
+
+.section-why-choose-us > .why-choose-us-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 500px;
+  gap: 15px;
+}
+
+.section-why-choose-us > .why-choose-us-div > hr {
+  width: 100%;
+}
+
+.section-why-choose-us > .why-choose-us-div > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.section-why-choose-us > .why-choose-us-div > ul li {
+  font-size: medium;
+}
+
+.section-why-choose-us > .why-choose-us-div > ul li > img {
+  width: 15px;
+}
+
+.section-why-choose-us + .two {
+  margin-top: -150px;
+  margin-bottom: -200px;
+}
+
+.section-why-choose-us + .two > .why-choose-us-div > .testimonial {
+  margin-top: 50px;
+}
+
+.section-why-choose-us + .two > .total-balance {
+  margin-left: -100px;
+  width: 700px;
+  transform: translateY(50px);
 }
